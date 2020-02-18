@@ -2,10 +2,10 @@ import unittest
 
 
 def local(array_list):
-
+    peak = []
     if len(array_list) != 0:
-        return [array_list[-1]]
-    return []
+        peak.append(array_list[-1])
+    return peak
 
 
 class LocalPeak(unittest.TestCase):
