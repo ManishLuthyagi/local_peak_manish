@@ -22,6 +22,8 @@ class LocalPeak(unittest.TestCase):
     def test_for_first_local_peak_in_sorted_list_descending_order(self):
         self.assertEqual([4], local([4, 3, 2, 1, 0]))
 
+    def test_for_first_local_peak_in_for_repeated_element(self):
+        self.assertEqual([4], local([4, 4, 2, 1, 0]))
 
 
 if __name__ == '__main__':
